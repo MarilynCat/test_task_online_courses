@@ -190,6 +190,29 @@ filterButtons.forEach(button => {
     });
 });
 
+// Функция обновления счетчиков фильтров
+function updateFilterCounts() {
+    // Подсчитываем курсы по категориям
+    const counts = {
+        "all": coursesData.length,
+        "marketing": coursesData.filter(c => c.category === "marketing").length,
+        "management": coursesData.filter(c => c.category === "management").length,
+        "hr-recruiting": coursesData.filter(c => c.category === "hr-recruiting").length,
+        "design": coursesData.filter(c => c.category === "design").length,
+        "development": coursesData.filter(c => c.category === "development").length
+    };
+    
+    // Обновляем счетчики в кнопках
+    filterButtons.forEach(button => {
+        const category = button.dataset.category;
+        const countElement = button.querySelector(".filter__count");
+        if (countElement && counts[category] !== undefined) {
+            countElement.textContent = counts[category];
+        }
+    });
+}
+
 // Инициализация
+updateFilterCounts();
 renderCourses();
 

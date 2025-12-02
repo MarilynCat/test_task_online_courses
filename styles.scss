@@ -122,9 +122,15 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 0 auto 60px;
     gap: 30px;
     flex-wrap: wrap;
+    max-width: 1230px; // 3 карточки по 390px + 2 gap по 30px
+
+    @media (max-width: 1600px) {
+        max-width: 100%;
+        margin: 0 0 60px 0;
+    }
 
     @media (max-width: 1024px) {
         flex-direction: column;
@@ -151,21 +157,23 @@ h6 {
 .filter {
     padding: 10px 20px;
     border: none;
-    background-color: $color-white;
-    border: 1px solid #E5E5E5;
+    background-color: transparent;
     border-radius: 4px;
-    font-size: clamp(14px, 1.5vw, 16px);
-    font-weight: 500;
-    color: $color-black;
+    font-size: 16px;
+    font-weight: 700; // Bold
+    line-height: 160%;
+    color: #9A9CA5;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     white-space: nowrap;
+    width: fit-content;
 
     &:hover {
-        background-color: #F5F5F5;
+        color: #FF3F3A;
     }
 
     @media (max-width: 480px) {
@@ -175,18 +183,20 @@ h6 {
 }
 
 .filter_active {
-    background-color: $color-red;
-    color: $color-white;
-    border-color: $color-red;
+    background-color: transparent;
+    color: #FF3F3A;
+    border: 1px solid #FF3F3A;
 
     &:hover {
-        background-color: color.scale($color-red, $lightness: -5%);
+        color: #FF3F3A;
     }
 }
 
 .filter__count {
-    font-size: clamp(12px, 1.2vw, 14px);
-    opacity: 0.8;
+    font-size: 10px;
+    line-height: 150%;
+    vertical-align: super;
+    margin-left: 4px;
 }
 
 // Search
@@ -283,6 +293,10 @@ h6 {
     &:hover {
         transform: translateY(-4px);
         box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+        
+        .course-card__image {
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -312,6 +326,7 @@ h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
 .course-card__content {
