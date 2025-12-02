@@ -134,12 +134,7 @@ function createCourseCard(course) {
 function filterCourses() {
     let filtered = coursesData;
     
-    // Фильтрация по категории
-    if (currentCategory !== "all") {
-        filtered = filtered.filter(course => course.category === currentCategory);
-    }
-    
-    // Фильтрация по поисковому запросу
+    // Сначала применяем поисковый запрос, если он есть
     if (searchQuery.trim() !== "") {
         const query = searchQuery.toLowerCase();
         filtered = filtered.filter(course => {
@@ -147,6 +142,11 @@ function filterCourses() {
             const categoryLabel = categoryLabels[course.category].toLowerCase();
             return courseTitle.includes(query) || categoryLabel.includes(query);
         });
+    }
+    
+    // Затем применяем фильтр по категории
+    if (currentCategory !== "all") {
+        filtered = filtered.filter(course => course.category === currentCategory);
     }
     
     return filtered;
@@ -188,6 +188,9 @@ filterButtons.forEach(button => {
         button.classList.add("filter_active");
         // Обновляем текущую категорию
         currentCategory = button.dataset.category;
+        // Сбрасываем поисковый запрос
+        searchQuery = "";
+        searchInput.value = "";
         renderCourses();
     });
 });
