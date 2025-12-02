@@ -167,8 +167,8 @@ function renderCourses() {
         coursesContainer.appendChild(card);
     });
     
-    // Скрываем кнопку "Load more", так как карточек всего 9
-    loadMoreBtn.style.display = "none";
+    // Показываем кнопку "Load more"
+    loadMoreBtn.style.display = "flex";
 }
 
 // Обработчик поиска
