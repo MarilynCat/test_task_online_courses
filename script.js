@@ -142,9 +142,11 @@ function filterCourses() {
     // Фильтрация по поисковому запросу
     if (searchQuery.trim() !== "") {
         const query = searchQuery.toLowerCase();
-        filtered = filtered.filter(course => 
-            course.title.toLowerCase().includes(query)
-        );
+        filtered = filtered.filter(course => {
+            const courseTitle = course.title.toLowerCase();
+            const categoryLabel = categoryLabels[course.category].toLowerCase();
+            return courseTitle.includes(query) || categoryLabel.includes(query);
+        });
     }
     
     return filtered;
