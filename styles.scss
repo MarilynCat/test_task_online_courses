@@ -281,7 +281,7 @@ h6 {
     display: grid;
     grid-template-columns: repeat(3, 390px);
     gap: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     justify-content: center;
 
     @media (max-width: 1600px) {
@@ -443,9 +443,11 @@ h6 {
     background-color: transparent;
     border: none;
     border-radius: 0;
-    font-size: clamp(14px, 1.5vw, 16px);
-    font-weight: 500;
-    color: $color-gray-dark;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    color: #424551;
     cursor: pointer;
     transition: opacity 0.3s ease;
 
@@ -459,9 +461,10 @@ h6 {
 }
 
 .load-more__icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
+    display: block;
 }
 
 @keyframes rotate {

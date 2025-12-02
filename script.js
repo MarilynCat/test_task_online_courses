@@ -157,7 +157,7 @@ function renderCourses() {
     coursesContainer.innerHTML = "";
     
     if (filtered.length === 0) {
-        coursesContainer.innerHTML = '<p class="courses__empty">Курсы не найдены</p>';
+        coursesContainer.innerHTML = '<p class="courses__empty">No courses found</p>';
         loadMoreBtn.style.display = "none";
         return;
     }
