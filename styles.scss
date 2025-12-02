@@ -26,6 +26,7 @@ body {
     background-color: $color-white;
     color: $color-black;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 // Заголовки
@@ -435,7 +436,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 16px;
     margin: 0 auto;
     padding: 0;
     width: 116px;
