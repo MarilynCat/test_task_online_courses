@@ -317,7 +317,7 @@ h6 {
 .course-card {
   background-color: #FFFFFF;
   border-radius: 4px;
-  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -332,7 +332,7 @@ h6 {
 }
 .course-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.16);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 .course-card:hover .course-card__image {
   transform: scale(1.05);
