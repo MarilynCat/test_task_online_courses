@@ -119,8 +119,11 @@ function createCourseCard(course) {
                 ${categoryLabel}
             </span>
             <h3 class="course-card__title">${course.title}</h3>
-            <p class="course-card__price">$${course.price}</p>
-            <p class="course-card__instructor">by ${course.instructor}</p>
+            <div class="course-card__price-wrapper">
+                <span class="course-card__price">$${course.price}</span>
+                <span class="course-card__divider">|</span>
+                <span class="course-card__instructor">by ${course.instructor}</span>
+            </div>
         </div>
     `;
     
