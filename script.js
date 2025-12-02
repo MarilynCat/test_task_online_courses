@@ -6,7 +6,7 @@ const coursesData = [
         category: "marketing",
         price: 100,
         instructor: "Jerome Bell",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Jerome+Bell"
+        image: "images/Jerome Bell.png"
     },
     {
         id: 2,
@@ -14,7 +14,7 @@ const coursesData = [
         category: "management",
         price: 480,
         instructor: "Marvin McKinney",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Marvin+McKinney"
+        image: "images/Marvin McKinney.png"
     },
     {
         id: 3,
@@ -22,7 +22,7 @@ const coursesData = [
         category: "hr-recruiting",
         price: 200,
         instructor: "Leslie Alexander Li",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Leslie+Alexander"
+        image: "images/Leslie Alexander Li.png"
     },
     {
         id: 4,
@@ -30,7 +30,7 @@ const coursesData = [
         category: "marketing",
         price: 530,
         instructor: "Kristin Watson",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Kristin+Watson"
+        image: "images/Kristin Watson.png"
     },
     {
         id: 5,
@@ -38,7 +38,7 @@ const coursesData = [
         category: "design",
         price: 500,
         instructor: "Guy Hawkins",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Guy+Hawkins"
+        image: "images/Guy Hawkins.png"
     },
     {
         id: 6,
@@ -46,7 +46,7 @@ const coursesData = [
         category: "management",
         price: 400,
         instructor: "Dianne Russell",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Dianne+Russell"
+        image: "images/Dianne Russell.png"
     },
     {
         id: 7,
@@ -54,7 +54,7 @@ const coursesData = [
         category: "development",
         price: 600,
         instructor: "Brooklyn Simmons",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Brooklyn+Simmons"
+        image: "images/Brooklyn Simmons.png"
     },
     {
         id: 8,
@@ -62,7 +62,7 @@ const coursesData = [
         category: "hr-recruiting",
         price: 150,
         instructor: "Kathryn Murphy",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Kathryn+Murphy"
+        image: "images/Kathryn Murphy.png"
     },
     {
         id: 9,
@@ -70,7 +70,7 @@ const coursesData = [
         category: "design",
         price: 240,
         instructor: "Cody Fisher",
-        image: "https://via.placeholder.com/300x300/FFD700/000000?text=Cody+Fisher"
+        image: "images/Cody Fisher.png"
     }
 ];
 
