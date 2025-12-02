@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our online courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <p class="header__subtitle">ENJOY YOUR STUDYING!</p>
+            <h1 class="header__title">Our online courses</h1>
+        </header>
+
+        <div class="controls">
+            <div class="filters">
+                <button class="filter filter_active" data-category="all">
+                    All
+                    <span class="filter__count">17</span>
+                </button>
+                <button class="filter" data-category="marketing">
+                    Marketing
+                    <span class="filter__count">4</span>
+                </button>
+                <button class="filter" data-category="management">
+                    Management
+                    <span class="filter__count">3</span>
+                </button>
+                <button class="filter" data-category="hr-recruiting">
+                    HR & Recruiting
+                    <span class="filter__count">5</span>
+                </button>
+                <button class="filter" data-category="design">
+                    Design
+                    <span class="filter__count">2</span>
+                </button>
+                <button class="filter" data-category="development">
+                    Development
+                    <span class="filter__count">3</span>
+                </button>
+            </div>
+            <div class="search">
+                <input 
+                    type="text" 
+                    class="search__input" 
+                    placeholder="Search course..." 
+                    id="searchInput"
+                >
+                <svg class="search__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 17.5L13.875 13.875" stroke="#999999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="courses" id="coursesContainer">
+            <!-- Карточки курсов будут добавлены через JavaScript -->
+        </div>
+
+        <button class="load-more" id="loadMoreBtn">
+            <svg class="load-more__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20M12 4L8 8M12 4L16 8M12 20L8 16M12 20L16 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Load more
+        </button>
+
+        <div class="decorations">
+            <div class="decorations__left">
+                <div class="decorations__arrow"></div>
+                <div class="decorations__arrow"></div>
+                <div class="decorations__arrow"></div>
+            </div>
+            <div class="decorations__right-top"></div>
+            <div class="decorations__right-bottom">
+                <div class="decorations__arrow"></div>
+                <div class="decorations__arrow"></div>
+                <div class="decorations__arrow"></div>
+                <div class="decorations__arrow"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

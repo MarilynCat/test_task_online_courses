@@ -1,0 +1,13 @@
+{
+  "name": "test-task-online-courses",
+  "version": "1.0.0",
+  "description": "Online courses catalog",
+  "scripts": {
+    "build-css": "sass styles.scss styles.css",
+    "watch-css": "sass --watch styles.scss:styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
+
