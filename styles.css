@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 700;
   line-height: 130%;
   font-size: 46px;
 }
@@ -51,13 +51,13 @@ h6 {
 .page {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 60px 345px 100px;
+  padding: 50px 345px 86px;
   position: relative;
   min-height: 100vh;
 }
 @media (max-width: 1600px) {
   .page {
-    padding: 60px 200px 100px;
+    padding: 50px 200px 86px;
   }
 }
 @media (max-width: 1200px) {
@@ -83,7 +83,7 @@ h6 {
 
 .header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 85px;
 }
 @media (max-width: 768px) {
   .header {
@@ -93,7 +93,7 @@ h6 {
 
 .header__subtitle {
   font-size: clamp(12px, 1.2vw, 16px);
-  color: #999999;
+  color: #1E212C;
   margin-bottom: 8px;
   font-weight: 400;
   letter-spacing: 0.5px;
@@ -101,8 +101,8 @@ h6 {
 
 .header__title {
   font-size: 46px;
-  font-weight: 900;
-  color: #000000;
+  font-weight: 700;
+  color: #1E212C;
   line-height: 130%;
 }
 @media (max-width: 768px) {
@@ -262,8 +262,7 @@ h6 {
 .course-card {
   background-color: #FFFFFF;
   border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -278,7 +277,7 @@ h6 {
 }
 .course-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 80px 80px -20px rgba(154, 156, 165, 0.16);
 }
 
 .course-card__image-wrapper {
@@ -290,6 +289,7 @@ h6 {
   background-size: 40px 40px, 20px 20px;
   overflow: hidden;
   flex-shrink: 0;
+  border-radius: 4px 4px 0 0;
 }
 @media (max-width: 1600px) {
   .course-card__image-wrapper {
@@ -314,6 +314,10 @@ h6 {
   gap: 20px;
   flex: 1;
   min-height: 0;
+  border-radius: 0 0 4px 4px;
+  border-bottom: 1px solid #E5E8ED;
+  border-left: 1px solid #E5E8ED;
+  border-right: 1px solid #E5E8ED;
 }
 
 .course-card__category {
@@ -334,7 +338,7 @@ h6 {
   font-size: 20px;
   font-weight: 700;
   line-height: 150%;
-  color: #000000;
+  color: #1E212C;
   margin: 0;
 }
 
